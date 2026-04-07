@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background: #3b3b3b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #d3d3d3;
+            padding: 15px;
+        }
+
+        .main {
+            grid-area: main;
+            background: #e6e6e6;
+            padding: 15px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #3b3b3b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">Header</div>
+
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <p>The Menu or quick access content.</p>
+    </div>
+
+    <div class="main">
+        <h3>Main Content</h3>
+        <p>The core website content should be displayed here.</p>
+    </div>
+
+    <div class="footer">Footer</div>
+
+</div>
+
+</body>
+</html>

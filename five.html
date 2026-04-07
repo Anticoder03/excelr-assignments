@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(to right, #e96479, #8f50c7);
+            font-family: Arial;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        .box {
+            width: 180px;
+            height: 150px;
+            border: 2px solid #5a2a5a;
+            background: linear-gradient(to bottom right, #f6d365, #fda085);
+            display: flex;
+            padding: 5px;
+        }
+
+        .inner {
+            display: flex;
+            gap: 5px;
+        }
+
+        .small-box {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(to bottom, #36d1dc, #000046);
+            color: black;
+            font-size: 10px;
+            padding: 2px;
+        }
+
+        /* Different alignments */
+        .top-left {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .top-center {
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .top-right {
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+
+        .bottom-left {
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+
+        .bottom-center {
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .bottom-right {
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- TOP ROW -->
+    <div class="row">
+        <div class="box top-left">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box top-center">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box top-right">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box top-left">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box top-center">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box top-right">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="row" style="justify-content: space-around;">
+
+        <div class="box center">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box bottom-left">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box center">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+        <div class="box bottom-right">
+            <div class="inner">
+                <div class="small-box">Box1</div>
+                <div class="small-box">Box2</div>
+                <div class="small-box">Box3</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

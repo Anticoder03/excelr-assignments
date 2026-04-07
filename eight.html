@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .bulb{
+            height: 200px;
+            width: 200px;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+        .button-container{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .btn{
+            height: 100px;
+            width: 50px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+           <div class="main">
+             <div class="bulb" id="bulb">
+
+            </div>
+            <div class="button-container">
+                <button class="btn" id="on" onclick="on()">ON</button>
+                <button class="btn" id="off" onclick="off()">OFF</button>
+            </div>
+           </div>
+       </div>
+</body>
+<script>
+    const buld = document.getElementById("bulb");
+    const on_btn = document.getElementById("on");
+    const off_btn = document.getElementById("off");
+
+    function on(){
+        let color = prompt("Enter the bg color");
+        buld.style.backgroundColor = color
+    }
+    function off(){
+        buld.style.backgroundColor = "white"
+    }
+</script>
+</html>

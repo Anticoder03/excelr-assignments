@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            background: white;
+        }
+
+        .left {
+            width: 40%;
+            background-color: #2874f0;
+            color: white;
+            padding: 40px;
+            position: relative;
+        }
+
+        .left h1 {
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .left img {
+            position: absolute;
+            bottom: 20px;
+            width: 80%;
+        }
+
+        .right {
+            width: 60%;
+            padding: 40px;
+        }
+
+        .right input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 10px 5px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .terms a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #fb641b;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .bottom-text {
+            text-align: center;
+            margin-top: 120px;
+            font-size: 14px;
+        }
+
+        .bottom-text a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Section -->
+        <div class="left">
+            <h1>Login</h1>
+            <p>
+                Get access to your Orders,<br>
+                Wishlist and<br>
+                Recommendations
+            </p>
+
+            <img src="https://via.placeholder.com/250x150" alt="login">
+        </div>
+
+        <!-- Right Section -->
+        <div class="right">
+            <input type="text" placeholder="Enter Email/Mobile number">
+
+            <p class="terms">
+                By continuing, you agree to Flipkart's 
+                <a href="#">Terms of Use</a> and 
+                <a href="#">Privacy Policy</a>
+            </p>
+
+            <button class="btn">Request OTP</button>
+
+            <div class="bottom-text">
+                New to Flipkart? <a href="#">Create an account</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
